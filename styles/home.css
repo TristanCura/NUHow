@@ -1,0 +1,150 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-image: linear-gradient(to right, #FFE9D9, #FED4B5, #e4dfff);
+  padding: 10px 50px;
+  height: 50px;
+  align-items: center;
+  box-shadow: 0px -10px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header div {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.color1 {
+    color: #0E1C36;
+}
+
+.color2 {
+    color: #EECC82;
+}
+
+.color3 {
+    color: #FFF8E8;
+}
+
+.nav {
+    display: flex;
+    column-gap: 1px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 19px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.home:hover, .featured:hover, .about:hover, .contact:hover {
+    background-color: rgba(95, 101, 112, 0.3); 
+    border-radius: 5px;
+}
+
+.nav_writeButton {
+    background-color: rgb(16, 30, 56);
+    color: #FFF8E8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nav_writeButton:hover {
+    background-color: rgb(44, 59, 89);
+}
+
+.main {
+    flex: 1;
+}
+
+footer {
+    background-image: linear-gradient(to bottom right, #0E1C36, #2c4574);
+    color: #FFF8E8;
+    padding: 20px 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
+    position: static;
+    box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer h2 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+footer p, a {
+    padding-bottom: 10px;
+}
+
+footer p {
+    padding-top: 10px;
+    line-height: 2;
+}
+
+footer a {
+    color: inherit;
+    text-decoration-color: inherit;
+    position: relative;
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: inherit;
+}
+
+.footer_NUHow {
+    padding-top: 20px;
+    display: grid;
+    width: 400px;   
+    text-align: justify;
+}
+
+.footer_title { 
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.footer_credits {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 80px;
+    text-align: center;
+}
+
+.footer_names {
+    display: grid;
+    height: auto;
+    width: auto;
+}
+
+.footer_email {
+    display: grid;
+    height: auto;
+    width: auto;
+}
+
+.footer_git {
+    display: grid;
+    height: auto;
+    width: auto;
+}
